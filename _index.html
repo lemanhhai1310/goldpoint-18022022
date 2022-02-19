@@ -1,10 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
+    <script src="/__prepros.js"></script>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>GoldPoint - Trang chủ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1645171708">
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1645171708"></script>
 </head>
-<body>
+<body class="">
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2428809380682169"
+     logged_in_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi"
+     logged_out_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi">
+</div>
+<script>
+    defer(function() {
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v5.0'
+            });
+        };
 
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }, 5000);
+</script><!--app-->
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+    <!--.header-->
+    <div id="header" class="header">
+        <!--.header__top-->
+        <div class="header__top">
+            <div class="uk-container uk-padding-remove">
+                <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                    <div class="uk-navbar-left">
+                        <a href="" class="uk-navbar-item header__top__navItem header__top__social" uk-icon="icon: youtube"></a>
+                        <a href="" class="uk-navbar-item header__top__navItem header__top__social" uk-icon="icon: facebook"></a>
+                        <a href="" class="uk-navbar-item header__top__navItem header__top__social" uk-icon="icon: instagram"></a>
+                        <div class="uk-navbar-item header__top__navItem"><span class="header__top__txt1">Khi cùng nhau không gì là không thể !</span></div>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <div class="uk-navbar-item header__top__navItem">
+                            <div class="header__top__divider">
+                                <div class="uk-flex-middle uk-grid-8" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <a href="" class="uk-icon-button header__top__icon" uk-icon="receiver"></a>
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <div class="header__top__size1">HOTLINE</div>
+                                        <div class="header__top__mt header__top__size2">0961992066</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__top__divider">
+                                <div class="uk-flex-middle uk-grid-8" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <a href="" class="uk-icon-button header__top__icon" uk-icon="user"></a>
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <div class="header__top__size2">TÀI KHOẢN</div>
+                                        <div class="header__top__mt header__top__size1"><a href="">ĐĂNG NHẬP</a> / <a href="">ĐĂNG KÝ</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--/.header__top-->
+
+        <!--.header__bottom-->
+        <div class="header__bottom">
+            <div class="uk-container uk-padding-remove">
+                <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="dropbar: true">
+                    <div class="uk-navbar-left">
+                        <a href="" class="uk-navbar-item uk-logo header__bottom__navItem"><img src="images/1x/logo.png" alt=""></a>
+                        <div class="uk-navbar-item header__bottom__navItem">
+                            <a href="" class="uk-button uk-button-primary header__bottom__danhmucbtn uk-border-rounded">
+                                <span class="header__bottom__danhmucbtn__txt">DANH MỤC SẢN PHẨM</span>
+                                <span class="uk-position-center-right header__bottom__danhmucbtn__icon" uk-icon="icon: check"></span>
+                            </a>
+                            <div class="uk-navbar-dropdown" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify;">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li class="uk-nav-header">Header</li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="uk-navbar-item header__bottom__navItem">
+
+                        </div>
+                    </div>
+                    <div class="uk-navbar-right">
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--/.header__bottom-->
+    </div>
+    <!--/.header-->
+</div>
+<!--/app-->
 </body>
 </html>

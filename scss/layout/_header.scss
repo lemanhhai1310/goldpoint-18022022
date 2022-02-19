@@ -1,0 +1,168 @@
+.header{
+  z-index: 1001;
+  position: relative;
+  &__top{
+    background-color: #6D8E0A;
+    &__navItem{
+      min-height: 50px;
+    }
+    &__txt1{
+      line-height: (15.6/13);
+      color: #ffffff;
+      @extend .fz-13;
+      font-family: $font-RobotoCondensed-Regular;
+    }
+    &__social{
+      color: #ffffff;
+      padding: 0 7px;
+    }
+    &__mt{
+      margin-top: 0px;
+    }
+    &__icon{
+      $x:30px;
+      width: #{$x};
+      height: #{$x};
+      background: #809F2C;
+      color: #ffffff;
+      position: relative;
+      svg{
+        transform: scale(0.85);
+      }
+    }
+    &__size1{
+      @extend .fz-9;
+      font-family: $font-RobotoCondensed-Regular;
+      color: #ffffff;
+      line-height: (7.2/6);
+      a{
+        color: #ffffff;
+      }
+    }
+    &__size2{
+      @extend .fz-15;
+      line-height: (15.6/13);
+      font-family: $font-RobotoCondensed-Bold;
+      color: #ffffff;
+    }
+    &__divider{
+      &:nth-child(n+2){
+        position: relative;
+        $x:25px;
+        padding-left: #{$x};
+        margin-left: #{$x};
+        &:before{
+          content: "";
+          width: 1px;
+          min-height: 25px;
+          display: inline-flex;
+          background-color: #809F2C;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 0;
+        }
+      }
+    }
+  }
+  &__bottom{
+    background-color: #75990B;
+    min-height: 107px;
+    .uk-container{
+      max-width: calc(1200px + 30px);
+    }
+    &__navItem{
+      min-height: 107px;
+    }
+    &__dropdown{
+
+    }
+    &__nav{
+      >li{
+        >a{
+          text-transform: uppercase;
+          font-family: $font-RobotoCondensed-Bold;
+          color: #020202;
+          @extend .fz-16;
+          &:hover{
+            color: #75990B;
+          }
+        }
+      }
+    }
+    &__subnav1{
+      >li{
+        position: relative;
+        &:nth-child(n+2){
+          border-top-style: dashed !important;
+        }
+        >a{
+          color: #6b6b6b;
+          @extend .fz-13;
+          font-family: $font-RobotoCondensed-Regular;
+          padding: 8px 0;
+          &:hover{
+            color: #75990B;
+          }
+        }
+      }
+    }
+    &__subnav2{
+      box-sizing: border-box;
+      min-width: max-content;
+      padding: 15px !important;
+      background: #fff;
+      color: #666;
+      box-shadow: 0 5px 12px rgba(0,0,0,.15);
+      border-radius: 4px;
+    }
+    &__danhmucbtn{
+      background-color: #FFAD00;
+      $x:46px;
+      line-height: calc(#{$x} - 2px);
+      padding-left: 15px;
+      padding-right: 45px;
+      position: relative;
+      &:hover{
+        background-color: #FFAD00;
+      }
+      &__txt{
+        @extend .fz-14;
+        font-family: $font-RobotoCondensed-Bold;
+        line-height: (16.8/14);
+      }
+      &__icon{
+        right: 10px;
+        $x:20px;
+        width: #{$x};
+        height: #{$x};
+        border-radius: 50%;
+        background-color: #ffffff;
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline fill='none' stroke='%23000' stroke-width='1.03' points='16 7 10 13 4 7'%3E%3C/polyline%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        svg{
+          opacity: 0;
+        }
+        .header__bottom__danhmucbtn[aria-expanded="false"] &{
+          background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline fill='none' stroke='%23000' stroke-width='1.03' points='16 7 10 13 4 7'%3E%3C/polyline%3E%3C/svg%3E");
+        }
+        .header__bottom__danhmucbtn[aria-expanded="true"] &{
+          background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline fill='none' stroke='%23000' stroke-width='1.03' points='4 13 10 7 16 13'%3E%3C/polyline%3E%3C/svg%3E");
+        }
+      }
+    }
+  }
+}
+.mask_menu{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 300;
+  display: none;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
