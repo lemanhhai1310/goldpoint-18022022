@@ -1,0 +1,35 @@
+.home{
+  &__section{
+    padding-top: 0;
+  }
+  &__block01{
+    padding: 10px 0;
+    @include media-breakpoint-up('m'){
+      padding: 20px 0;
+    }
+    &__subnav{
+      margin: 0;
+      >li{
+        >a{
+          text-transform: inherit !important;
+          @extend .fz-14;
+          color: #6D6E71;
+          font-family: $font-RobotoCondensed-Regular;
+        }
+        &.uk-active{
+          >a{
+            color: #ED1C24;
+          }
+        }
+      }
+    }
+  }
+  &__blockSlider{
+    margin-left: -15px;
+    margin-right: -15px;
+    @include media-breakpoint-up('m'){
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
