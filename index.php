@@ -88,21 +88,21 @@
                     <div>
                         <div class="uk-cover-container uk-border-rounded">
                             <img src="images/1x/banner1.jpg" alt="" uk-cover="">
-                            <canvas width="321" height="142"></canvas>
+                            <canvas width="390" height="172"></canvas>
                             <a href="" class="uk-position-cover"></a>
                         </div>
                     </div>
                     <div>
                         <div class="uk-cover-container uk-border-rounded">
                             <img src="images/1x/banner2.jpg" alt="" uk-cover="">
-                            <canvas width="321" height="142"></canvas>
+                            <canvas width="390" height="172"></canvas>
                             <a href="" class="uk-position-cover"></a>
                         </div>
                     </div>
                     <div>
                         <div class="uk-cover-container uk-border-rounded">
                             <img src="images/1x/banner3.jpg" alt="" uk-cover="">
-                            <canvas width="321" height="142"></canvas>
+                            <canvas width="390" height="172"></canvas>
                             <a href="" class="uk-position-cover"></a>
                         </div>
                     </div>
