@@ -84,26 +84,28 @@
 
         <div>
             <div class="home__item">
-                <div class="uk-child-width-1-3@m uk-grid-small" uk-grid>
-                    <div>
-                        <div class="uk-cover-container uk-border-rounded">
-                            <img src="images/1x/banner1.jpg" alt="" uk-cover="">
-                            <canvas width="390" height="172"></canvas>
-                            <a href="" class="uk-position-cover"></a>
+                <div class="home__blockBanner uk-overflow-auto">
+                    <div class="uk-child-width-auto uk-flex-nowrap uk-child-width-1-3@m uk-grid-small home__blockBanner__grid" uk-grid>
+                        <div class="home__blockBanner__column">
+                            <div class="uk-cover-container uk-border-rounded home__blockBanner__img">
+                                <img src="images/1x/banner1.jpg" alt="" uk-cover="">
+                                <canvas width="390" height="172"></canvas>
+                                <a href="" class="uk-position-cover"></a>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <div class="uk-cover-container uk-border-rounded">
-                            <img src="images/1x/banner2.jpg" alt="" uk-cover="">
-                            <canvas width="390" height="172"></canvas>
-                            <a href="" class="uk-position-cover"></a>
+                        <div class="home__blockBanner__column">
+                            <div class="uk-cover-container uk-border-rounded home__blockBanner__img">
+                                <img src="images/1x/banner2.jpg" alt="" uk-cover="">
+                                <canvas width="390" height="172"></canvas>
+                                <a href="" class="uk-position-cover"></a>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <div class="uk-cover-container uk-border-rounded">
-                            <img src="images/1x/banner3.jpg" alt="" uk-cover="">
-                            <canvas width="390" height="172"></canvas>
-                            <a href="" class="uk-position-cover"></a>
+                        <div class="home__blockBanner__column">
+                            <div class="uk-cover-container uk-border-rounded home__blockBanner__img">
+                                <img src="images/1x/banner3.jpg" alt="" uk-cover="">
+                                <canvas width="390" height="172"></canvas>
+                                <a href="" class="uk-position-cover"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
