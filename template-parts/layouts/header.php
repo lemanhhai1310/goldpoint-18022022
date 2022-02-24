@@ -125,7 +125,7 @@
     <!--/.header__top-->
 
     <!--.header__bottom-->
-    <div class="header__bottom">
+    <div class="header__bottom" uk-sticky>
         <div class="uk-container uk-padding-remove">
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="dropbar: true">
                 <div class="uk-navbar-left">
