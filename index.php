@@ -138,7 +138,7 @@
                 <div class="uk-margin">
                     <div class="uk-child-width-1-2 uk-child-width-1-5@m uk-grid-3 uk-grid-0-m uk-grid-match" uk-grid>
                         <?php for ($i=1;$i<=14;$i++): ?>
-                        <div>
+                        <div class="home__column">
                             <div class="home__card uk-border-rounded">
                                 <div class="uk-cover-container home__card__img">
                                     <img src="" alt="" uk-cover="">

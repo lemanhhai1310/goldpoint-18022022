@@ -94,6 +94,13 @@
       }
     }
   }
+  &__column{
+    &.uk-grid-margin{
+      @include media-breakpoint-up('m'){
+        margin-top: 20px !important;
+      }
+    }
+  }
   &__card{
     border: 1px solid #201D1D;
     //border: 1px solid transparent;
@@ -111,7 +118,7 @@
       background-color: #D1D3D4;
     }
     &__title{
-      @extend .fz-12;
+      @extend .fz-14;
       font-family: $font-RobotoCondensed-Regular;
       color: #231F20;
       a{
