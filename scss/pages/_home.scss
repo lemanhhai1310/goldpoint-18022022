@@ -60,4 +60,14 @@
       @extend .line-clamp-1;
     }
   }
+  &__item{
+    &:nth-child(n+2){
+      $x:20px;
+      margin-top: #{$x};
+      @include media-breakpoint-up('m'){
+        $x:50px;
+        margin-top: #{$x};
+      }
+    }
+  }
 }
