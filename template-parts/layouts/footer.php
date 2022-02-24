@@ -98,7 +98,7 @@
                     <div class="footer__top__item">
                         <h3 class="uk-h3 footer__top__title">Tải ứng dụng trên điện thoại</h3>
                         <div class="uk-grid-match uk-grid-5 uk-flex-middle" uk-grid>
-                            <div class="uk-width-2-5">
+                            <div class="uk-width-2-5@m uk-width-auto">
                                 <a href=""><img class="footer__top__qr" src="images/bank/1x/qrcode.png" alt=""></a>
                             </div>
                             <div class="uk-width-expand">
