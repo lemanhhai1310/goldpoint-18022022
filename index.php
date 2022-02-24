@@ -136,7 +136,31 @@
                     </ul>
                 </div>
                 <div class="uk-margin">
+                    <div class="uk-child-width-1-2 uk-child-width-1-5@m uk-grid-3 uk-grid-0-m uk-grid-match" uk-grid>
+                        <?php for ($i=1;$i<=14;$i++): ?>
+                        <div>
+                            <div class="home__card uk-border-rounded">
+                                <div class="uk-cover-container home__card__img">
+                                    <img src="" alt="" uk-cover="">
+                                    <canvas width="200" height="200"></canvas>
+                                    <a href="" class="uk-position-cover"></a>
+                                </div>
+                                <div class="uk-padding-small uk-text-center">
+                                    <div class="home__card__item">
+                                        <div class="home__card__price home__card__price--new">40.000đ</div>
+                                        <div class="home__card__price home__card__price--old"><del>50.000đ</del></div>
+                                    </div>
+                                    <div class="home__card__item">
+                                        <h4 class="uk-h4 uk-margin-remove home__card__title"><a href="">Bàn chải NAVI SUGOI</a></h4>
+                                    </div>
+                                    <div class="home__card__item">
 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php endfor; ?>
+                    </div>
                 </div>
             </div>
         </div>

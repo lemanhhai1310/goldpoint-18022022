@@ -94,6 +94,47 @@
       }
     }
   }
+  &__card{
+    border: 1px solid #201D1D;
+    //border: 1px solid transparent;
+    @include media-breakpoint-up('m'){
+      border: 1px solid transparent;
+    }
+    &:hover{
+      border-color: #201D1D;
+    }
+    box-sizing: border-box;
+    //min-height: 400px;
+    $x:3px;
+    padding: #{$x};
+    &__img{
+      background-color: #D1D3D4;
+    }
+    &__title{
+      @extend .fz-12;
+      font-family: $font-RobotoCondensed-Regular;
+      color: #231F20;
+      a{
+        color: #231F20;
+      }
+    }
+    &__item{
+      &:nth-child(n+2){
+        margin-top: 5px;
+      }
+    }
+    &__price{
+      @extend .fz-14;
+      line-height: (16.8/14);
+      font-family: $font-RobotoCondensed-Regular;
+      &--new{
+        color: #6D8E0A;
+      }
+      &--old{
+        color: #A7A9AC;
+      }
+    }
+  }
   &__navbar{
     border-bottom: 1px solid #9D9FA2;
     &__item{
