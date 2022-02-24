@@ -1,0 +1,67 @@
+.footer{
+  &__block01{
+    background-color: #75990B;
+    @include media-breakpoint-up('m'){
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    &__title{
+      color: #FFFFFF;
+      @extend .fz-16;
+      font-family: $font-RobotoCondensed-Bold;
+    }
+    &__txt{
+      color: #FFFFFF;
+      @extend .fz-13;
+      font-family: $font-RobotoCondensed-Regular;
+    }
+  }
+  &__top{
+    &__qr{
+      width: 100%;
+    }
+    &__img1{
+      width: 100%;
+    }
+    &__item{
+      &:nth-child(n+2){
+        margin-top: 20px;
+      }
+    }
+    &__title{
+      @extend .fz-16;
+      font-family: $font-RobotoCondensed-Regular;
+      color: #000;
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+    &__list{
+      margin: 0;
+      >li{
+        margin: 0 !important;
+        >a{
+          @extend .fz-13;
+          font-family: $font-RobotoCondensed-Regular;
+          color: #6D6E71;
+        }
+      }
+    }
+    &__boxBank{
+      @extend .fz-13;
+      font-family: $font-RobotoCondensed-Regular;
+      color: #6D6E71;
+    }
+  }
+  &__bottom{
+    border-top: 1px solid #9D9FA2;
+    @include media-breakpoint-up('m'){
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    &__txt{
+      @extend .fz-12;
+      font-family: $font-RobotoCondensed-Regular;
+      color: #6D6E71;
+    }
+  }
+}
