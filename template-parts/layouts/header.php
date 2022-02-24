@@ -19,7 +19,7 @@
     <script src="js/app.js?v=<?php echo(time()) ?>"></script>
 </head>
 <body class="<?= (isset($body))?$body:'' ?>">
-<?php require "template-parts/commons/facebook_chat.php"; ?>
+<?php //require "template-parts/commons/facebook_chat.php"; ?>
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
 <div id="offcanvas-flip-menu" class="menuMobile" uk-offcanvas="flip: true; overlay: true">

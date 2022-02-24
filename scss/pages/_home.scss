@@ -32,4 +32,32 @@
       margin-right: 0;
     }
   }
+  &__block02{
+    &__icon{
+      $x:35px;
+      width: #{$x};
+      height: #{$x};
+      @include media-breakpoint-up('m'){
+        $x:40px;
+        width: #{$x};
+        height: #{$x};
+      }
+      display: flex;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    &__txt1{
+      @extend .fz-14;
+      line-height: (15.6/13);
+      color: #000000;
+      @extend .line-clamp-1;
+    }
+    &__txt2{
+      @extend .fz-11;
+      line-height: (12/10);
+      color: #6D6E71;
+      @extend .line-clamp-1;
+    }
+  }
 }
