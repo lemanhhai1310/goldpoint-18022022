@@ -94,6 +94,58 @@
       }
     }
   }
+  &__navbar{
+    border-bottom: 1px solid #9D9FA2;
+    &__item{
+      min-height: 40px;
+      @include media-breakpoint-up('m'){
+        min-height: 60px;
+      }
+    }
+    &__title{
+      @extend .fz-22;
+      font-family: $font-RobotoCondensed-Bold;
+      color: #000;
+    }
+    .uk-navbar-nav{
+      >li{
+        >a{
+          @extend .home__navbar__item;
+          text-transform: inherit;
+          @extend .fz-14;
+          font-family: $font-RobotoCondensed-Regular;
+          color: #000;
+          position: relative;
+          &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            left: 15px;
+            right: calc(102% - 15px);
+            bottom: -1px;
+            height: 2px;
+            background-color: currentColor;
+            transition: .3s ease-in-out;
+            transition-property: right;
+          }
+          &:hover{
+            color: #6D8E0A;
+            &:before{
+              right: 15px;
+            }
+          }
+        }
+        &.uk-active{
+          >a{
+            color: #6D8E0A;
+            &:before{
+              right: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
   &__item{
     &:nth-child(n+2){
       $x:20px;

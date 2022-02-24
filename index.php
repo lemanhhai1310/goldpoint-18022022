@@ -25,6 +25,8 @@
                 </li>
             </ul>
 
+            <ul class="uk-slideshow-nav uk-dotnav uk-position-bottom-center uk-position-small"></ul>
+
             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
 
@@ -111,7 +113,31 @@
                 </div>
             </div>
             <div class="home__item">
+                <div class="uk-margin">
+                    <nav class="home__navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <a href="" class="home__navbar__item home__navbar__title uk-navbar-item uk-logo uk-padding-remove">DANH MỤC SẢN PHẨM</a>
+                        </div>
 
+                        <div class="uk-navbar-right uk-visible@m">
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-active"><a href="#">Ngành hàng nhà tắm</a></li>
+                                <li><a href="#">Ngành hàng mỹ phẩm</a></li>
+                                <li><a href="#">Ngành hàng nhà bếp</a></li>
+                                <li><a href="#">Ngành hàng tẩy rửa</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <ul class="home__block01__subnav uk-margin-small-top uk-hidden@m uk-subnav uk-subnav-divider" uk-margin>
+                        <li class="uk-active"><a href="#">Ngành hàng nhà tắm</a></li>
+                        <li><a href="#">Ngành hàng mỹ phẩm</a></li>
+                        <li><a href="#">Ngành hàng nhà bếp</a></li>
+                        <li><a href="#">Ngành hàng tẩy rửa</a></li>
+                    </ul>
+                </div>
+                <div class="uk-margin">
+
+                </div>
             </div>
         </div>
     </div>
