@@ -136,13 +136,13 @@
                     </ul>
                 </div>
                 <div class="uk-margin">
-                    <div class="uk-child-width-1-2 uk-child-width-1-5@m uk-grid-3 uk-grid-0-m uk-grid-match" uk-grid>
+                    <div class="uk-child-width-1-2 uk-child-width-1-5@m uk-grid-3 uk-grid-0-m uk-grid-match uk-flex-center" uk-grid>
                         <?php for ($i=1;$i<=14;$i++): ?>
                         <div class="home__column">
                             <div class="home__card uk-border-rounded">
                                 <div class="uk-cover-container home__card__img">
-                                    <img src="" alt="" uk-cover="">
-                                    <canvas width="200" height="200"></canvas>
+                                    <img src="images/noimage.jpg" alt="" uk-cover="">
+                                    <canvas width="232" height="232"></canvas>
                                     <a href="" class="uk-position-cover"></a>
                                 </div>
                                 <div class="uk-padding-small uk-text-center">
@@ -154,13 +154,47 @@
                                         <h4 class="uk-h4 uk-margin-remove home__card__title"><a href="">Bàn chải NAVI SUGOI</a></h4>
                                     </div>
                                     <div class="home__card__item">
-
+                                        <div class="uk-position-relative uk-text-center">
+                                            <div class="home__card__boxRate" uk-toggle="cls: uk-position-center; mode: media; media: @m">
+                                                <span class="home__card__boxRate__star uk-active"></span>
+                                                <span class="home__card__boxRate__star uk-active"></span>
+                                                <span class="home__card__boxRate__star uk-active"></span>
+                                                <span class="home__card__boxRate__star uk-active"></span>
+                                                <span class="home__card__boxRate__star uk-active"></span>
+                                            </div>
+                                            <a href="" class="home__card__addCart uk-border-rounded uk-button uk-button-primary"><span>Thêm vào giỏ hàng</span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <?php endfor; ?>
+                        <div class="home__column">
+                            <div class="uk-flex uk-flex-middle uk-flex-between uk-flex-column home__box1 uk-position-relative">
+                                <div>
+                                    <div class="uk-cover-container">
+                                        <div class="uk-cover-container home__box1__icon uk-position-center">
+                                            <canvas class="uk-visible@m" width="60" height="60"></canvas>
+                                            <canvas class="uk-hidden@m" width="40" height="40"></canvas>
+                                        </div>
+                                        <canvas class="uk-visible@m" width="232" height="232"></canvas>
+                                        <canvas class="uk-hidden@m" width="80" height="80"></canvas>
+                                    </div>
+                                    <a href="" class="uk-position-cover"></a>
+                                </div>
+                                <div class="uk-flex-auto uk-flex-middle uk-flex"><a href="" class="home__box1__link">XEM THÊM SẢN PHẨM</a></div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="home__item">
+                <div class="uk-margin">
+                    <nav class="home__navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <a href="" class="home__navbar__item home__navbar__title uk-navbar-item uk-logo uk-padding-remove">SẢN PHẨM BÁN CHẠY</a>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
