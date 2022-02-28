@@ -1,0 +1,115 @@
+.chitietsanpham{
+  &__section{
+    padding-top: 20px !important;
+  }
+  &__label{
+    color: #000;
+    @extend .fz-13;
+    font-family: $font-RobotoCondensed-Bold;
+    margin-bottom: 5px;
+  }
+  &__title{
+    color: #231F20;
+    @extend .fz-18;
+    font-family: $font-RobotoCondensed-Regular;
+  }
+  &__txt{
+    color: #6D6E71;
+    @extend .fz-13;
+    font-family: $font-RobotoCondensed-Regular;
+    a{
+      color: #6D8E0A;
+    }
+  }
+  &__tab{
+    &:before{
+      border-color: #6D8E0A;
+    }
+    >li{
+      &.uk-active{
+        >a{
+          color: #FFFFFF;
+          border-color: #6D8E0A;
+          background-color: #6D8E0A;
+          $x:6px;
+          border-radius: #{$x} #{$x} 0 0;
+        }
+      }
+      >a{
+        color: #231F20;
+        @extend .fz-16;
+        font-family: $font-RobotoCondensed-Regular;
+      }
+    }
+  }
+  &__article{
+    color: #6D6E71;
+    p{
+      color: #6D6E71;
+      @extend .fz-13;
+      font-family: $font-RobotoCondensed-Regular;
+    }
+  }
+  &__code{
+    color: #1C75BC;
+    background-color: transparent;
+    border: 1px solid #1C75BC;
+    border-radius: 4px;
+    text-transform: inherit;
+    @extend .fz-13;
+    font-family: $font-RobotoCondensed-Regular;
+  }
+  &__color{
+    background-color: var(--color);
+    border-color: var(--color);
+    text-transform: inherit;
+    border-radius: 4px;
+    font-family: $font-RobotoCondensed-Regular;
+    @extend .fz-12;
+  }
+  &__price{
+    &--new{
+      font-family: $font-RobotoCondensed-Bold;
+      @extend .fz-24;
+      color: #231F20;
+    }
+    &--old{
+      color: #A7A9AC;
+      @extend .fz-18;
+      font-family: $font-RobotoCondensed-Regular;
+    }
+    &--sale{
+      background: #ED1C24;
+      text-transform: inherit;
+      @extend .fz-12;
+      font-family: $font-RobotoCondensed-Regular;
+      border-radius: 4px;
+    }
+  }
+  &__list{
+    >li{
+      margin: 0 !important;
+      color: #000;
+      @extend .fz-13;
+      font-family: $font-RobotoCondensed-Regular;
+    }
+  }
+  &__btn{
+    border-radius: 4px;
+    padding: 0 15px;
+    @extend .fz-13;
+    font-family: $font-RobotoCondensed-Regular;
+    @include media-breakpoint-up('m'){
+      min-width: 140px;
+    }
+    &--addtocart{
+      text-transform: inherit;
+      color: #6D8E0A;
+      border-color: #6D8E0A;
+    }
+    &--buy{
+      background-color: #27AAE1;
+      border-color: #27AAE1;
+    }
+  }
+}
